@@ -83,7 +83,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h1 className="text welcome-div py-4 border-bottom">Welcome Mrs Irwin's Kindergarten to Software Engineering</h1>
+              <h1 className="text welcome-div py-4 border-bottom">Welcome Mrs Irwin&apos;s Kindergarten to Software Engineering</h1>
               <ul>
                 <li className='text2 py-2'>Software engineers are responsible for creating and maintaining code for websites, apps, video games, and all electronics.  </li>
                 <li className='text2 py-2'>Code is written instructions for computers. Its like a recipe to build a robot!</li>
