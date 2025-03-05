@@ -16,6 +16,7 @@ export function Riddle() {
 
     const [word, setWord] = useState('');
     const [hint, setHint] = useState('');
+    const [riddle, setRiddle] = useState('');
     const [guess, setGuess] = useState('');
     const [correct, setCorrect] = useState(0);
     const [alertVisible, setAlertVisible] = useState(false);
@@ -56,14 +57,21 @@ export function Riddle() {
 
         const getRiddle = async() => {
             try {
-                const newRiddle = await fetch('/api/definitions')
+                
+                const riddleNumber = correct;
+                const newRiddle = await fetch(`/api/definitions?number=${encodeURIComponent(riddleNumber)}`, {
+                    method: 'Get'
+                })
                 const data = await newRiddle.json()
-                console.log(data)
+                console.log('data from fetching words:' + data)
      
                     if (newRiddle) {
                         console.log('riddle fetched')
+                        setRiddle(data)
                         setHint(data.hint)
+                        console.log(hint)
                         setWord(data.word)
+                        
                     } else {
                         console.log(`failed to fetch riddle:${newRiddle.status}`)
                     }  
@@ -71,6 +79,7 @@ export function Riddle() {
                 console.log("error fetching the riddle in client")
             }
         };
+
         getRiddle()
 
     }, [correct]);
@@ -116,8 +125,8 @@ export function Riddle() {
 
     return(
         <div className="">
-            <div className="card-body ">
-                <h3 className='text'>Today&apos;s Word: </h3>
+            <div className="card-body  ">
+                <h3 className='text d-flex justify-content-center py-4 border-bottom'>Can You Guess This Word? </h3>
                 <h5 className='text2'>{hint? hint : "loading..."}</h5>
                 <div className='form-box d-flex justify-content-start'>
                 <ToastContainer position="top-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" /> 

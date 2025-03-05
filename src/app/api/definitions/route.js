@@ -12,24 +12,22 @@ export async function GET(request) {
     try {
         
         const searchParams = request.nextUrl.searchParams
-
-        const word = searchParams.get('word')
-        console.log(word)
+        const number = searchParams.get('number')
         
+        console.log(number)
 
-        if(!word ) {
+        if(!number ) {
             return new Response(JSON.stringify({error: 'word not received'}))
         };
 
-        const hint = await Definition.findOne({ hint: hint });
-        
-
-         if (!answer) {
-            return new Response(JSON.stringify({error: 'puzzle not found'}), {status: 404})
-         };
+        const puzzle = await Definition.findOne({ number: number });
+                const count = await Definition.countDocuments();
+                
+                 if (!puzzle) {
+                    return new Response(JSON.stringify({error: 'puzzle not found'}), {status: 404})
+                 };
          
-        
-         return new Response(JSON.stringify({word: definitions.riddle, hint: definitions.answer}), {status: 200})
+         return new Response(JSON.stringify({word: puzzle.word, hint: puzzle.hint, number: puzzle.number}), {status: 200})
          
     } catch (error) {
             return new Response(JSON.stringify({error: 'error retrieving '+ error}))
@@ -42,9 +40,10 @@ export async function POST(req , res) {
  
         try {
         
-        const { word, hint} = await req.json()
+        const { word, hint } = await req.json()
+        const number = await Definition.countDocuments();
     
-        const newPuzzle = new Definition({word, hint});
+        const newPuzzle = new Definition({number, word, hint,});
         
         await newPuzzle.save()
         
