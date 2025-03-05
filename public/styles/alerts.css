@@ -1,0 +1,49 @@
+.alert-card {
+    border-radius: 5px;
+    width:100%;
+    height:100%;
+    overflow: visible;
+    box-sizing: content-box;
+    z-index: 100
+   
+}
+.alert-box {
+    height: 100%;
+    width: 100%;
+}
+.winner-box {
+    width:100%;
+    height: 100%;
+}
+
+.crazy-ball {
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    top: -1vw;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: rgb(235, 231, 234);
+    opacity: 1;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-delay:calc(var(--index) *.1s);
+    animation-direction: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translate(0 , 0);
+      background-color: rgb(240, 239, 236);
+      opacity: .5;
+      
+    }
+    to {
+        transform: translate(var(--bounce-spotX), var(--bounce-spotY));
+        background-color: var(--color);
+        opacity: 1;
+        
+    }
+}

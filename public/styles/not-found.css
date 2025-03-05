@@ -1,0 +1,322 @@
+.galaxy {
+    background-image: url('../../public/images/page404.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    height:100%;
+    width: 100%;
+    z-index: 1;
+    animation: 3s ease-out 0s 1 forwards fade-out;
+    animation-play-state: paused;
+    
+}
+
+
+.animation-background {
+    position: relative;
+    height:72vw;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.not-found-text {
+    font-family: "Archivo Black", sans-serif;
+    font-size: x-large;
+    color: rgb(238, 205, 156);
+    text-shadow: 3px 3px rgba(231, 102, 102, 0.651);
+    position: relative;
+    text-decoration-line: underline;
+    margin-top: 10vw;
+    z-index: 3;
+}
+
+.page {
+    animation-name: into-black-hole-1;
+    animation-duration: 7s;
+    animation-delay: calc(var(--index)* 2.1s);
+    animation-direction: forward;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in; 
+    animation-play-state: paused;
+    
+}
+.not { 
+    animation-name: into-black-hole-2;
+    animation-duration: 7s;
+    animation-delay: calc(var(--index)* 2.5s);
+    animation-direction: forward;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-play-state: paused; 
+    perspective: 1000;
+    
+}
+.found {
+    animation-name: into-black-hole-3;
+    animation-delay: calc(var(--index)*2.6s);
+    animation-direction: forward;
+    animation-fill-mode: forwards;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    animation-timing-function: ease-in; 
+    
+    
+}
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(213, 232, 240);
+    top: 60%;
+    left: 43%;
+}
+
+.home-button{
+    height: fit-content;
+}
+
+span {
+    height: 10vw;
+}
+
+.text-404 {
+    width: 100%;
+}
+
+.word1 {
+    animation:3s linear 1s 1 forwards grow;
+}
+
+.word2 {
+    animation:3s linear 1s 1 forwards grow;
+}
+
+.word3 {
+    animation:3s linear 1s 1 forwards grow;
+}
+.l1 {
+    animation-name: shooting-star-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l2 {
+    animation-name: shooting-star-2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l3 {
+    animation-name: shooting-star-3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l4 {
+    animation-name: shooting-star-4;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l5 {
+    animation-name: shooting-star-5;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+
+.l6 {
+    animation-name: shooting-star-6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l7 {
+    animation-name: shooting-star-7;
+    animation-duration: 2s;
+    animation-delay: .6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+.l8 {
+    animation-name: shooting-star-8;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;   
+}
+/*  css animation of page not found  */
+
+@keyframes shooting-star-1 {
+    from {
+        transform: scaleX(0);
+        top: 60%;
+        left: 43%;
+        opacity: .5;
+    }
+    to {
+        transform: scaleX(2);
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-2 {
+    from {
+        transform: scaleY(0);
+        top: 60%;
+        left: 43%;
+        opacity: .5;
+    }
+    to {
+        transform: scaleY(2);
+        top: 100%;
+        left: 100%;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-3 {
+    from {
+        transform: scaleY(0);
+        top: 60%;
+        left: 43%;
+        opacity: .2;
+    }
+    to {
+        transform: scaleY(2);
+        top: 0%;
+        left: 100%;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-4 {
+    from {
+        transform: scaleX(0);
+        top: 60%;
+        left: 43%;
+        opacity: .3;
+    }
+    to {
+        transform: scaleX(2);
+        top: 100%;
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-5 {
+    from {
+        transform: scaleY(0);
+        top: 40%;
+        left: 50%;
+        opacity: .5;
+    }
+    to {
+        transform: scaleY(2);
+        top: 0%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-6 {
+    from {
+        transform: scaleY(0);
+        top: 50%;
+        left: 50%;
+        opacity: .5;
+    }
+    to {
+        transform: scaleY(2);
+        top: 100%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-7 {
+    from {
+        transform: scaleX(0);
+        top: 50%;
+        left: 55%;
+        opacity: .2;
+    }
+    to {
+        transform: scaleX(2);
+        top: 50%;
+        left: 100%;
+        opacity: 1;
+    }
+}
+@keyframes shooting-star-7 {
+    from {
+        transform: scaleX(0);
+        top: 50%;
+        left: 45%;
+        opacity: .3;
+    }
+    to {
+        transform: scaleX(2);
+        top: 50%;
+        left: 0%;
+        opacity: 1;
+    }
+}
+/* animated words falling into the black hole */
+
+@keyframes into-black-hole-1 {
+    from {
+        transform: translate(0, 0) rotate(0deg) rotate3d(0, 0, 0, 0deg) scale(1) ;
+        opacity: 1;
+    }
+    to{
+        transform: translate(25rem, 25rem) rotate(730deg) rotate3d(2, 2, 2, 180deg) scale(0) ;
+        opacity: 0;
+    }
+}
+@keyframes into-black-hole-2 {
+    from {
+        transform: translate(0, 0) rotate3d(0, 0, 0, 0deg) rotate(0deg) scale(1) ;
+        opacity: 1;
+    }
+    to {
+        transform: translate(10rem, 25rem) rotate3d(1, 2, 1, 120deg) rotate(730deg) scale(0) ;
+        opacity: 0;
+    } 
+}
+@keyframes into-black-hole-3 {
+    from{
+        transform: translate(0, 0) rotate(0deg) rotate3d(0, 0, 0, 0deg) scale(1) ;
+        opacity: 1;
+    }
+    to{
+        transform: translate(5rem, 25rem) rotate(730deg) rotate3d(1, 1, 1, 180deg) scale(0) ;
+        opacity: .0;
+    }
+}
+@keyframes grow{
+    0% {
+        transform: scale(1);
+        text-shadow: 0px 0px;
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow: 2rem 2rem rgb(233, 26, 171);
+    }
+    100% {
+        transform: scale(1.05);
+        text-shadow: 0px 0px;
+    }
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,232 @@
+
+/* X-Small devices ( 5765px and below) */
+@media screen and (max-width:575px) {
+    .card {
+        width: 95vw;
+        margin: 1vw;
+    }
+    .navbar {
+        min-height: 10rem;  
+    }
+    .nav-container {
+        margin: .5vw;
+    }
+     /* footer responsive styling */
+    .footer{
+       justify-content: center;
+    }
+    .logo-me {
+       height: 20vw;
+       width: 20vw;
+    }
+    .logo {
+        height: 8vw;
+        width: 8vw;
+      }
+    .thanks-text {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+}
+
+
+/* small screen (576 and above)*/
+@media screen and  (min-width: 576px) { 
+.card {
+    margin: 1vw;
+}
+.dash-container {
+    width: 100%;
+}
+.navbar {
+    min-height: 10rem;  
+}
+.nav-container {
+    margin: .5vw;
+}
+.top-row-dash {
+    height: 15rem;
+    max-width: 15.5rem;
+    min-width: 15.5rem;
+    margin: 1vw 0;
+}
+ /* footer responsive styling */
+ .footer{
+    justify-content: center;
+ }
+ .logo-me {
+    height: 15vw;
+    width: 15vw;
+ }
+ .logo {
+     height: 6vw;
+     width: 6vw;
+   }
+ .thanks-text {
+     margin-top: 1rem;
+     justify-content: center;
+ }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and  (min-width: 768px) { 
+
+    .dash-container {
+        width: 100%;
+    }
+    .navbar {
+        min-height: 10rem;  
+    }
+    .nav-container {
+        margin: .5vw;
+    }
+    .top-row-dash {
+        height: 20vw;
+        min-width: 20rem;
+        max-width: 21rem;
+        margin:.5vw 0vw;
+    }
+    /* footer responsive styling */
+    .footer{
+        justify-content: center;
+     }
+     .logo-me {
+        height: 15vw;
+        width: 15vw;
+     }
+     .logo {
+         height: 4vw;
+         width: 4vw;
+       }
+     .thanks-text {
+         margin-top: 1rem;
+         justify-content: center;
+     }
+    
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and  (min-width: 992px) {
+  
+    .dash-container {
+        width: 100%;
+    }
+    .navbar {
+        min-height: 10rem;  
+    }
+    .nav-container {
+        margin: .5vw;
+    }
+    /* Responsive card in Dashboard */
+    .dash-card {
+        height: 27vw;
+        min-width: 29rem;
+        max-width: 29rem;
+        margin:.5vw 0vw;
+    }
+    .top-row-dash {
+        height: 15vw;
+    }
+    /* footer responsive styling */
+    .footer{
+        justify-content: space-between;
+     }
+     .logo-me {
+        height: 10vw;
+        width: 10vw;
+     }
+     .logo {
+         height: 4vw;
+         width: 4vw;
+       }
+     .thanks-text {
+         margin-top: 1rem;
+         justify-content: center;
+     }
+    
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and  (min-width: 1200px) { 
+    .dash-container {
+        width: 100%;
+    }
+    .navbar {
+        min-height: 10rem;  
+    }
+    .nav-container {
+        margin: .5vw;
+    }
+    .dash-card {
+        height: 22vw;
+        min-width: 29rem;
+        max-width: 34rem;
+        margin:.5vw 0vw;
+    }
+    .top-row-dash {
+        height: 12vw;
+    }
+     /* footer responsive styling */
+     .footer{
+        justify-content: space-between;
+     }
+     .logo-me {
+        height: 8vw;
+        width: 8vw;
+     }
+     .logo {
+         height: 3vw;
+         width: 3vw;
+       }
+     .thanks-text {
+         margin-top: 1rem;
+         justify-content: center;
+     }
+     .helpful-hints {
+        max-width: 30vw ;
+     }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    .dash-container {
+        width: 100%;
+    }
+    .navbar {
+        min-height: 10rem;  
+    }
+    .nav-container {
+        margin: .5vw;
+    }
+    .dash-card {
+        height: 20vw;
+        min-width: 33rem;
+        max-width: 40rem;
+        margin:.5vw 0vw;
+    }
+    .top-row-dash {
+        height: 10vw;
+    }
+    /* footer responsive styling */
+    .footer{
+        justify-content: space-between;
+     }
+     .logo-me {
+        height: 8vw;
+        width: 8vw;
+     }
+     .logo {
+         height: 3vw;
+         width: 3vw;
+       }
+     .thanks-text {
+         margin-top: 1rem;
+         justify-content: center;
+     }
+     .helpful-hints {
+        max-width: 30vw ;
+     }
+ }
+

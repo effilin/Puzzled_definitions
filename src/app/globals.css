@@ -1,0 +1,195 @@
+
+/******************************* global usage or general use */
+body {
+  background-color: var(--primary-color);
+  position: relative;
+  width: 100%;
+  height:100%;
+  
+}
+.text {
+  color:var(--font-color);
+  font-family: "Playfair Display", serif;
+}
+.text2 {
+  color: var(--font-contrast);
+}
+.main-card {
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  
+}
+
+/****************************** Navigation bar and header */
+.navbar {
+  background-image: var(--background-image);
+  background-size: var(--background-size);
+  background-position: var(--background-position);
+  font-family: "Archivo Black", sans-serif;;
+  color:var(--font-color);
+  font-weight: 400;
+  width: 98%;
+  border-radius: 10px;
+  
+ 
+}
+.nav-container {
+  width: 100%;
+}
+
+.menu {
+  color: var(--font-color);
+}
+.menu:hover {
+  color: var(--font-color-hover) ;
+}
+
+/**************************** Welcome page */
+
+.welcome1 {
+  color: var(--font-color); 
+}
+
+.pop-box{
+  background-color: var(--popup-color);
+  overflow: visible;
+}
+
+.main-body {
+  flex-wrap: wrap;
+  position: relative;
+  margin:.5%;
+  border-radius: 5px;
+ 
+}
+.star-box, .star-box-footer,.star-box-dash {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height:100%;
+  
+}
+.star {
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgb(240, 239, 236);
+  opacity: .4;
+  animation-name: twinkle;
+  animation-duration: 2s;
+  animation-delay: calc(var(--index)* .4s);
+  animation-direction: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+@keyframes twinkle {
+  from {
+    transform: scale(1);
+    background-color: rgb(240, 239, 236);
+  }
+  to {
+    transform: scale(2);
+    background-color: rgb(229, 253, 172);
+  }
+}
+.form-box {
+  display: flex;
+  justify-content: space-around;
+}
+.dropdown-menu {
+  background-color: var(--popup-color);
+}
+/************************** Dashboard */
+.riddle-card {
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  margin: 0;
+}
+a {
+  color: var(--a-color) ;
+}
+a:hover {
+  color: var(--a-color-hover);
+}
+#weather-icon {
+ height: 5rem;
+}
+.icon-box {
+  width: 30vw;
+}
+.radioButtons {
+  margin-left: 4%;
+}
+.top-row-dash {
+  height: fit-content;
+}
+/************************* Footer ***/
+.footer {
+  background-color: var(--secondary-color);
+  width: 98%;
+  border-radius: 10px;
+  overflow:auto;
+  margin:.5;
+  padding: 1;
+  display: block;
+  
+}
+.foot1 {
+  height: min-content;
+}
+.info-box {
+  height: 1vw;
+  width: 4rem;
+}
+.spotify {
+  height: min-content;
+}
+/*************************** Themes */
+
+[data-theme="garden-view"] {
+  --background-image: url('../../public/images/flowers.png');
+  --background-size: cover;
+  --background-position: 50%;
+  --primary-color:#36503e ;
+  --box-shadow: 0 0.3rem .6rem rgba(3, 2, 5, 0.664);
+  --secondary-color:#72a579a1;
+  --font-color: rgb(26, 26, 26);
+  --font-contrast:rgb(17, 17, 17);
+  --popup-color: #f0f7cc;
+  --a-color: rgb(36, 5, 211);
+  --a-color-hover: rgb(0, 1, 1);
+
+}
+
+[data-theme="synth-wave"] {
+  --background-image: url('../../public/images/synthWave.jpg');
+  --background-size: 101% 75%;
+  --background-position: 50%;
+  --primary-color:#41375c ;
+  --box-shadow: 0 0.3rem .6rem rgba(3, 2, 5, 0.664);
+  --secondary-color:#938cd35e;
+  --font-color:  #fcf2f2;
+  --font-contrast: rgb(248, 247, 250); 
+  --popup-color: #e4c6c6;
+  --a-color: rgb(160, 149, 221);
+  --a-color-hover: rgb(1, 1, 1);
+
+}
+
+[data-theme="night-sky"] {
+  --background-image: url('../../public/images/nightSky.jpg');
+  --background-size: 100% 100%;
+  --background-position: 75%;
+  --primary-color:#132a4b ;
+  --box-shadow: 0 0.3rem .6rem rgba(3, 2, 5, 0.664);
+  --secondary-color:#39558086;
+  --font-color:  #fcf2f2;
+  --font-contrast: rgb(237, 236, 241);
+  --font-color-hover: #a6b1e1;
+  --popup-color: #a6b1e1;
+  --a-color: rgb(123, 135, 173);
+  --a-color-hover: rgb(1, 1, 1);
+}
