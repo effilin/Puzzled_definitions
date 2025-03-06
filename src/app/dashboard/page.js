@@ -240,7 +240,7 @@ export default function Dashboard() {
                     </div>
                 </div>
                 <div className='card riddle-card mt-2'>
-                    <Riddle/>
+                   {/* <Riddle/> */}
                 </div>
 
             </div>
