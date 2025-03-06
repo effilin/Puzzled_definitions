@@ -18,7 +18,6 @@ export default function Weather() {
 
     useEffect(() => {
 
-        let isMounted = true;
         const zipCodeCurrent = currentUser.zipCode? currentUser.zipCode: 23218;
       
         const getWeather = async() => {
@@ -33,16 +32,13 @@ export default function Weather() {
      
                 const data = await res.json()
                 console.log(data);
-                if(isMounted) {
-                    if (res.ok) {
+                if(!data.error) {
                         console.log('weather fetched')
                         setWeather(data)
                     };
-                    if (!res.ok) {
-                        console.log(`failed to fetch weather:${res.status}`)
+                if (data.error) {
+                        console.log(`failed to fetch weather:${res.error}`)
                     }
-                }
-                 
             }catch(error) {
                 console.log("error fetching")
             }
