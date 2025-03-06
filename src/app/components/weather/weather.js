@@ -9,10 +9,10 @@ export default function Weather() {
  const [weather, setWeather] = useState()
  const {currentUser, setCurrentUser} = useContext(UserContext);
  const [conditions, setConditions] = useState();
- const [city, setCity] = useState();
- const [state, setState] = useState();
- const [temp, setTemp] = useState();
- const [icon, setIcon] = useState()
+ const [city, setCity] = useState('');
+ const [state, setState] = useState('');
+ const [temp, setTemp] = useState('');
+ const [icon, setIcon] = useState('')
 
 
 

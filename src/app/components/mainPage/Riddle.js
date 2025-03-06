@@ -16,7 +16,7 @@ export function Riddle() {
 
     const [word, setWord] = useState('');
     const [hint, setHint] = useState('');
-    const [riddle, setRiddle] = useState('');
+    const [riddle, setRiddle] = useState({});
     const [guess, setGuess] = useState('');
     const [correct, setCorrect] = useState(0);
     const [alertVisible, setAlertVisible] = useState(false);

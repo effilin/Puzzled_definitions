@@ -217,6 +217,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="card main-card dash-card m-1">
+                    
                     <div className="card-body">
                         <Weather/>
                     </div>
