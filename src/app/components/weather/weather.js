@@ -45,9 +45,6 @@ export default function Weather() {
         };
         getWeather()
 
-        return() => {
-            isMounted = false;
-        }
 
     }, [currentUser]);
 
