@@ -219,7 +219,7 @@ export default function Dashboard() {
                 <div className="card main-card dash-card m-1">
                     
                     <div className="card-body">
-                       {/*  <Weather/> */}
+                         <Weather/> 
                     </div>
                 </div>
 

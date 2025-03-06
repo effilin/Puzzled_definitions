@@ -19,7 +19,7 @@ export default function Weather() {
     useEffect(() => {
 
         let isMounted = true;
-        const zipCodeCurrent = currentUser.zipCode;
+        const zipCodeCurrent = currentUser.zipCode? currentUser.zipCode: 23218;
       
         const getWeather = async() => {
             try {

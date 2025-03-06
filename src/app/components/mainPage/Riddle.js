@@ -16,7 +16,7 @@ export function Riddle() {
 
     const [word, setWord] = useState('');
     const [hint, setHint] = useState('');
-    const [riddle, setRiddle] = useState(null);
+    const [riddle, setRiddle] = useState('');
     const [guess, setGuess] = useState('');
     const [correct, setCorrect] = useState(0);
     const [alertVisible, setAlertVisible] = useState(false);
@@ -128,7 +128,7 @@ export function Riddle() {
         <div className="">
             <div className="card-body  ">
                 <h3 className='text d-flex justify-content-center py-4 border-bottom'>Can You Guess This Word? </h3>
-                <h5 className='text2'>{hint? hint : "loading..."}</h5>
+                <h5 className='text2 d-flex justify-content-center py-4'>{hint? hint : "loading..."}</h5>
                 <div className='form-box d-flex justify-content-start'>
                 <ToastContainer position="top-left" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" /> 
                     <form onSubmit={(e) => handleGuess(e, guess)}>
