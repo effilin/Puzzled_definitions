@@ -68,6 +68,7 @@ export function Riddle() {
                     if (newRiddle) {
                         console.log('riddle fetched')
                         setRiddle(data)
+
                         setHint(data.hint)
                         console.log(hint)
                         setWord(data.word)
